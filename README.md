@@ -1,9 +1,9 @@
 
-Install OpenCV 3.4.0 with Python 3 on Raspberry Pi
+#Install OpenCV 3.4.0 with Python 3 on Raspberry Pi
 
-Steps 
+#Steps 
 
-Step 1: Expand filesystem
+#Step 1: Expand filesystem
 
 Type the following command to expand the Raspberry Pi3 file system
 • sudo raspi-config
@@ -12,7 +12,7 @@ Then select the following
 
 • Advanced Options > A1 Expand filesystem > Press “Enter”
 
-Step 2: Install Dependencies
+#Step 2: Install Dependencies
 
 The first step is to update and upgrade any existing packages:
 Then reboot your pi.
@@ -43,7 +43,7 @@ Install optimization packages (improved matrix operations for OpenCV)
 
 • sudo apt-get upgrade
 
-Step 4: Install Python 3, setuptools, dev and Numpy
+#Step 4: Install Python 3, setuptools, dev and Numpy
 
 Install Python 3 and numpy
 
@@ -55,7 +55,7 @@ Install Python 3 and numpy
 
 • sudo pip3 install numpy
 
-Step 5: Download the OpenCV 3.4 and contrib extra modules
+#Step 5: Download the OpenCV 3.4 and contrib extra modules
 
 • cd ~
 
@@ -69,7 +69,7 @@ https://github.com/Itseez/opencv_contrib/archive/3.4.0.zip
 
 • unzip opencv_contrib.zip
 
-Step 6: Compile and Install OpenCV 3.4.0 for Python 3
+#Step 6: Compile and Install OpenCV 3.4.0 for Python 3
 
 • cd opencv-3.4.0
 
@@ -91,7 +91,7 @@ Step 6: Compile and Install OpenCV 3.4.0 for Python 3
 -D BUILD_TESTS=OFF \
 -D BUILD_PERF_TESTS= OFF ..
 
-Step 7: Swap Space size before compiling to add more virtual memory
+#Step 7: Swap Space size before compiling to add more virtual memory
 It will enable OpenCV to compile with all four cores of the Raspberry PI without any
 memory issues. Open your /etc/dphys-swapfile and then edit the CONF_SWAPSIZE variable
 
@@ -110,7 +110,7 @@ Then type the following lines to take it into effect
 
 • sudo /etc/init.d/dphys-swapfile start
 
-Step 7: Finally, Ready to be Compile
+#Step 7: Finally, Ready to be Compile
 
 Type the following command to compile it using 4 cores of pi
 
@@ -126,7 +126,7 @@ again with only one core using the following command
 
 • make
 
-Step 8: Install the build on raspberry pi
+#Step 8: Install the build on raspberry pi
 
 After the successful build install the build using the following command
 
@@ -134,7 +134,7 @@ After the successful build install the build using the following command
 
 • sudo ldconfig
 
-Step 9: Verify the OpenCV build
+#Step 9: Verify the OpenCV build
 
 After running make install, OpenCV + Python bindings should be installed in
 
@@ -154,7 +154,7 @@ command:
 
 • sudo mv /usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-arm-linuxgnueabihf.so cv2.so
 
-Step 10: Testing OpenCV 3.4.0 install
+#Step 10: Testing OpenCV 3.4.0 install
 
 • $ python3
 
@@ -162,7 +162,7 @@ Step 10: Testing OpenCV 3.4.0 install
 >>> cv2.__version__
 '3.4.0'
 
-Step 11: Don’t forget to change your swap size back!
+#Step 11: Don’t forget to change your swap size back!
 Open your /etc/dphys-swapfile and then edit the CONF_SWAPSIZE variable
 
 • sudo nano /etc/dphys-swapfile
