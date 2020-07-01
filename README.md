@@ -97,9 +97,9 @@ memory issues. Open your /etc/dphys-swapfile and then edit the CONF_SWAPSIZE var
 
 • sudo nano /etc/dphys-swapfile
 It will open the nano editor for editing the CONF_SWAPSIZE. Change it like below:
-# set size to absolute value, leaving empty (default) then uses computed value
-# you most likely don't want this, unless you have an special disk situation
-# CONF_SWAPSIZE=100
+.# set size to absolute value, leaving empty (default) then uses computed value
+.# you most likely don't want this, unless you have an special disk situation
+.# CONF_SWAPSIZE=100
 CONF_SWAPSIZE=1024
 
 Then save the changes you’ve made
@@ -169,10 +169,10 @@ Open your /etc/dphys-swapfile and then edit the CONF_SWAPSIZE variable
 
 It will open the nano editor for editing the CONF_SWAPSIZE. Change it like below:
 
-# set size to absolute value, leaving empty (default) then uses computed value
-# you most likely don't want this, unless you have an special disk situation
+.# set size to absolute value, leaving empty (default) then uses computed value
+.# you most likely don't want this, unless you have an special disk situation
 CONF_SWAPSIZE=100
-# CONF_SWAPSIZE=1024
+.# CONF_SWAPSIZE=1024
 
 Then save the changes you’ve made
 Then type the following lines to take it into effect
