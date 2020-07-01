@@ -1,0 +1,6 @@
+1 : Two source code in this Folder
+2 : 'ImageTest.ccp' for testing the images
+3 : 'VideoTest.cpp' for testing the video
+4 : Data source for both video and image are also include in this folder
+       1 : Test.jpg
+       2 : vtest.mp4 and vtest.avi
