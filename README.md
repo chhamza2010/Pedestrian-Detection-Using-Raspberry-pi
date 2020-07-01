@@ -43,7 +43,7 @@ Install optimization packages (improved matrix operations for OpenCV)
 
 • sudo apt-get upgrade
 
-# Step 4: Install Python 3, setuptools, dev and Numpy
+# Step 3: Install Python 3, setuptools, dev and Numpy
 
 Install Python 3 and numpy
 
@@ -55,7 +55,7 @@ Install Python 3 and numpy
 
 • sudo pip3 install numpy
 
-# Step 5: Download the OpenCV 3.4 and contrib extra modules
+# Step 4: Download the OpenCV 3.4 and contrib extra modules
 
 • cd ~
 
@@ -69,7 +69,7 @@ https://github.com/Itseez/opencv_contrib/archive/3.4.0.zip
 
 • unzip opencv_contrib.zip
 
-# Step 6: Compile and Install OpenCV 3.4.0 for Python 3
+# Step 5: Compile and Install OpenCV 3.4.0 for Python 3
 
 • cd opencv-3.4.0
 
@@ -91,7 +91,7 @@ https://github.com/Itseez/opencv_contrib/archive/3.4.0.zip
 -D BUILD_TESTS=OFF \
 -D BUILD_PERF_TESTS= OFF ..
 
-# Step 7: Swap Space size before compiling to add more virtual memory
+# Step 6 Swap Space size before compiling to add more virtual memory
 It will enable OpenCV to compile with all four cores of the Raspberry PI without any
 memory issues. Open your /etc/dphys-swapfile and then edit the CONF_SWAPSIZE variable
 
