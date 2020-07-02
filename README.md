@@ -181,4 +181,4 @@ Then type the following lines to take it into effect
 
 # Results
 
-[alt text] (https://github.com/chhamza2010/Pedestrian-Detection-Using-Raspberry-pi/blob/master/1.PNG) 
+![alt text](https://github.com/chhamza2010/Pedestrian-Detection-Using-Raspberry-pi/blob/master/1.PNG) 
